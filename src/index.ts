@@ -30,18 +30,18 @@ function parseRequest(request: string): ParsedRequest | undefined {
       robloxUser: removedTailSpaces.at(1),
       callsign: removedTailSpaces.at(2),
       rank: removedTailSpaces.at(3),
-      division: removedTailSpaces.at(4);
+      division: removedTailSpaces.at(4)
     }
   }
 
   return result;
 }
 
-parseRequest(
+console.log(parseRequest(
 `# update
 Discord username: Trooper_Mr.Clean 
 Roblox username: Venom71292 
 Callsign: 7W-34
 Rank: Senior Firefighter Wildland 
 Division: LCFR`
-);
+));
